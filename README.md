@@ -65,9 +65,9 @@ Ensuite, on récupère les informations dans la table Name de Mysql
 
 La variable $names est un tableau des résultats de la requête faite sur les tables Name, PersonInfo, InfoType, CastInfo et Title.
 La méthode findBy() prend en argument:
-	- Les critères de la clause WHERE sous forme de tableau (ex: array('nomChamp' => 'valeurVoulu')), ici on applique pas de critère
-	- Le tri souhaité dans la clause ORDER BY sous forme de tableau, dans notre cas on tri sur le champs Name.id par ordre croissant
-	- La limite de la clause LIMIT, ici on limite à 1000 ligne
+- Les critères de la clause WHERE sous forme de tableau (ex: array('nomChamp' => 'valeurVoulu')), ici on applique pas de critère
+- Le tri souhaité dans la clause ORDER BY sous forme de tableau, dans notre cas on tri sur le champs Name.id par ordre croissant
+- La limite de la clause LIMIT, ici on limite à 1000 ligne
 
 Ensuite pour chaque ligne retournée par la requête:
 - on créé un nouveau Document MongoDb
