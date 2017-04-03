@@ -1,0 +1,8 @@
+mongo:
+    resource: "@MongoBundle/Controller/"
+    type:     annotation
+    prefix:   /mongo
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
