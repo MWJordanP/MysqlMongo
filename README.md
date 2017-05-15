@@ -13,8 +13,18 @@ cd MysqlMongo
 ### Lancer l'installation du projet avec:
 composer install
 
+### Si vous avez php7, lancer cette commande:
+composer require alcaeus/mongo-php-adapter --ignore-platform-reqs
+
 # Utilisation:
 --------------
+Dans une première console faire un premier tunnel entre le server et le local pour SQL
+	
+	ssh upjv.utard.me -L 3307:127.0.0.1:3306 -l votre_utilisateur
+	
+Dans une seconde console faire un second tunnel entre le server et le local pour Mongo
+	
+	ssh upjv.utard.me -L 27017:127.0.0.1:27017 -l votre_utilisateur
 
 Dans la console, placez vous à la racine du projet et lancez les commandes suivantes:
 ### Pour importer les acteurs
