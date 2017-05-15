@@ -42,7 +42,8 @@ class ImportMovieCommand extends ContainerAwareCommand
         /** @var EntityManager $om */
         $om = $this->getContainer()->get('doctrine')->getManager();
         $om->getConnection()->getConfiguration()->setSQLLogger(null);
-        $dm = $this->getContainer()->get('doctrine_mongodb')->getManager();
+        $dm   = $this->getContainer()->get('doctrine_mongodb')->getManager();
+        $list = $dm->getRepository(Movie::class)->findAll();
 
         /** @var Title[] $titles */
         $titles = $om->getRepository('AppBundle:Title')->findBy([], ['id' => 'ASC'], 1000);
