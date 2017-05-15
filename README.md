@@ -26,7 +26,7 @@ Dans une seconde console faire un second tunnel entre le server et le local pour
 	
 	ssh upjv.utard.me -L 27017:127.0.0.1:27017 -l votre_utilisateur
 
-Dans la console, placez vous à la racine du projet et lancez les commandes suivantes:
+Dans une dernière console, placez vous à la racine du projet et lancez les commandes suivantes:
 ### Pour importer les acteurs
 	sf database:import:actors
 
